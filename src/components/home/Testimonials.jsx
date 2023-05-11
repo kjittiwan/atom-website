@@ -2,7 +2,7 @@ export default function Testimonials() {
   return (
     <section className="section snap-start flex items-center justify-center pt-10">
       <div className="bg-light h-[75%] w-[80%] flex flex-col items-center py-14 ">
-        <p className='uppercase  text-sm text-grey'>testimonials</p>
+        <p className='uppercase  text-sm text-grey mb-4'>testimonials</p>
         <h1 className='font-primary text-[35px]'>What Clients Say</h1>
         <div className="flex justify-evenly items-center mx-10 mt-16">
           <div className=' w-1/4'>
