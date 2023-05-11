@@ -6,6 +6,8 @@ import HeroSection from '../components/home/HeroSection'
 import About from '../components/home/AboutSection'
 import AboutSection from '../components/home/AboutSection'
 import ServiceSection from '../components/home/ServiceSection'
+import Testimonials from '../components/home/Testimonials'
+import ArticlesSection from '../components/home/ArticlesSection'
 export default function Home() {
   return (
     <section 
@@ -13,8 +15,10 @@ export default function Home() {
       className="section snap-y snap-mandatory overflow-y-scroll"
     >
     <HeroSection />
-    < AboutSection />
+    <AboutSection />
     <ServiceSection />
+    <Testimonials />
+    <ArticlesSection />
       
     </section>
   )

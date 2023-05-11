@@ -12,6 +12,11 @@ export default {
     extend: {
       backgroundImage : {
         'building': "url('./src/images/home/building.jpg')",
+      },
+      colors: {
+        primary: '#0E1112',
+        grey: '#777777',
+        light: '#F1F1F1'
       }
     },
   },

@@ -12,9 +12,9 @@ export default function ServiceSection() {
         <div
           className='font-primary w-[400px] flex flex-col gap-y-3'
         >
-          <p className='uppercase font-secondary text-sm text-gray-500'>Our services</p>
+          <p className='uppercase font-secondary text-sm text-grey'>Our services</p>
           <h1 className=' text-[54px]'>What We Offer</h1>
-          <div className='flex flex-col text-gray-500'>
+          <div className='flex flex-col text-grey'>
             <List order='01' title='residential design' />
             <List order='02' title='public & institutional design' />
             <List order='03' title='commercial design' />

@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply text-primary font-secondary
+  }
   .section {
     @apply h-screen w-screen;
   }
