@@ -44,12 +44,12 @@ export default function About() {
           <div className='w-[40%] text-xl text-grey'>And although we're always learning from industry experts, we don't take ourselves too seriously. You'll find a great, supportive team here at Atom, where you can grow your career and find opportunities to shine.</div>
         </div>
         <div className='w-full h-[45%] bg-light rounded-md flex flex-col items-center justify-center gap-y-6'>
-          <div className='text-[40px]'>Interested in joining our team?</div>
-          <div className='text-xl text-center w-[45%]'>Curious about our story? Want to tell us more about yourself? We'd love to hear from you!</div>
+          <div className='text-[40px] font-primary'>Interested in joining our team?</div>
+          <div className='text-xl text-center w-[45%] text-grey'>Curious about our story? Want to tell us more about yourself? We'd love to hear from you!</div>
           <button className='btn px-4 py-2'>Contact us</button>
         </div>
       </div>
-      <div className='section snap-start flex flex-col justify-center items-center px-32 gap-y-24'>
+      <div className='section snap-start flex flex-col justify-center items-center px-32 gap-y-16'>
         <div className='font-primary text-[54px]'>Our Blogs</div>
         <div className="grid grid-cols-4 grid-rows-1 gap-[40px] max-w-none mx-auto">
           {Articles.map((article) => {
