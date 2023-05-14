@@ -14,6 +14,7 @@ export default {
         'building': "url('./src/images/home/building.jpg')",
         'aboutHero': "url('./src/images/about/hero.jpg')",
         'darkBg': "url('./src/images/about/dark.jpg')",
+        'aboutHome': "url('./src/images/about/building.jpg')"
       },
       colors: {
         primary: '#0E1112',

@@ -1,9 +1,9 @@
 import React from 'react'
 import { BsArrowDown } from 'react-icons/bs'
-import Articles from '../data/Articles'
-import ArticleCard from '../components/home/ArticleCard'
-import Projects from '../data/Projects'
+import Team from '../data/Team'
+
 export default function About() {
+  console.log(Team)
   return (
     <section className='section snap-y snap-mandatory overflow-y-scroll'>
       <div className='section snap-start flex flex-col justify-center  items-center px-32 pt-24 gap-y-14'>
@@ -38,6 +38,20 @@ export default function About() {
           </div>
         </div>
       </div>
+      <div className='section snap-start flex flex-col justify-center items-center px-44 gap-y-6'>
+        <div className='text-[30px] font-primary'>Our Team</div>
+        <div className='grid grid-cols-4 grid-rows-2 w-full h-[75%] gap-y-10 gap-x-6 '>
+          {Team.map((member) => {
+            return (
+              <div className='h-full w-full flex flex-col'>
+                <img src={member.image} alt="" className='h-[90%] w-full object-cover' />
+                <p className='font-bold text-lg'>{member.name}</p>
+                <p className='text-grey'>{member.position}</p>
+              </div>
+            )
+          })}
+        </div>
+      </div>
       <div className='section snap-start flex flex-col justify-center items-center px-52 gap-y-14 pt-14'>
         <div className='flex justify-between w-full'>
           <div className='w-[40%] text-3xl font-semibold'>We work hard, but we also play hard together, like our virtual happy hours, game nights, and costume parties.</div>
@@ -49,14 +63,7 @@ export default function About() {
           <button className='btn px-4 py-2'>Contact us</button>
         </div>
       </div>
-      <div className='section snap-start flex flex-col justify-center items-center px-32 gap-y-16'>
-        <div className='font-primary text-[54px]'>Our Blogs</div>
-        <div className="grid grid-cols-4 grid-rows-1 gap-[40px] max-w-none mx-auto">
-          {Articles.map((article) => {
-            return <ArticleCard key={article.id} article={article} />
-          })}    
-       </div>
-      </div>
+      
     
     </section>
   )

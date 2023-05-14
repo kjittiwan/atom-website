@@ -20,14 +20,14 @@ export default function ProjectsSection() {
         <motion.div
         ref={carousel}
         whileTap={{cursor:"grabbing"}}
-        className=" cursor-grab overflow-hidden flex h-[60%]" >
+        className=" cursor-grab overflow-hidden flex h-[50%] lg:h-[60%]" >
           <motion.div
           drag="x"
           dragConstraints={{right:0, left:-width}}
           className=" flex">
             {Projects.map((project) => {
               return(
-                <motion.div key={project.title}  className=" min-w-[20rem] min-h-[250px] flex flex-col">
+                <motion.div key={project.title}  className=" min-w-[15rem] lg:min-w-[20rem] min-h-[250px] flex flex-col">
                   <img src={project.image} alt={project.title}
                   className="w-full h-[90%] object-cover pointer-events-none"  
                   />

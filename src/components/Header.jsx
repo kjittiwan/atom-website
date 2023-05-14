@@ -1,4 +1,3 @@
-import Socials from './Socials'
 import MobileNav from './MobileNav'
 import Logo from '../images/header/logo.png'
 import { Link } from 'react-router-dom'
@@ -15,7 +14,7 @@ export default function Header() {
           <Link to={'/'} className={`${linkStyle}`}>Home</Link>
           <Link to={'/about'} className={`${linkStyle}`}>About</Link>
           <Link to={'/projects'} className={`${linkStyle}`}>Projects</Link>
-          <Link to={'/services'} className={`${linkStyle}`}>Services</Link>
+          <Link to={'/blog'} className={`${linkStyle}`}>Blog</Link>
           <Link to={'/contact'} className={`${linkStyle}`}>Contact</Link>
         </nav>
       </div>

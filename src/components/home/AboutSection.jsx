@@ -7,14 +7,13 @@ export default function AboutSection() {
   return (
       <section
       className='section snap-start'
-      
       >
-        <div className='section mx-auto px-32 flex items-center justify-between'>
-          <div className='w-[650px] h-[450px]'>
+        <div className='section mx-auto px-8 lg:px-32 flex items-center justify-between'>
+          <div className='w-[650px] h-[450px] hidden lg:block'>
             <img src={Building} alt="building"  className='object-cover opacity-90'/>
           </div>
           <div
-            className=' w-[400px] flex flex-col gap-y-3'
+            className=' w-full lg:w-[400px] flex flex-col gap-y-3 items-center lg:items-start'
           >
             <p className='uppercase  text-sm text-grey'>About us</p>
             <h1 className='font-primary text-[54px]'>Who are we?</h1>

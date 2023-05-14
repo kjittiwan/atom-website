@@ -7,7 +7,7 @@ export default function ServiceSection() {
     className='section snap-start'
     
     >
-      <div className='section mx-auto px-32 flex items-center justify-between'>
+      <div className='section mx-auto px-8 lg:px-32 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-y-2 lg:gap-y-4'>
         
         <div
           className='font-primary w-[400px] flex flex-col gap-y-3'
@@ -24,8 +24,8 @@ export default function ServiceSection() {
          
           
         </div>
-        <div className='w-[650px] h-[450px]'>
-          <img src={Building} alt="building"  className='object-cover opacity-90'/>
+        <div className='w-full h-[30%] lg:w-[650px] lg:h-[450px]'>
+          <img src={Building} alt="building"  className='object-cover opacity-90 h-full w-full'/>
         </div>
       </div>
     </section>
