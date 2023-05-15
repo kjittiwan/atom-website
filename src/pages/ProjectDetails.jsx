@@ -21,20 +21,20 @@ export default function ProjectDetails() {
   const project = [...ProjectsData].find((item) => item.id === parseInt(id))
   return (
     <section
-      className='section snap-start'
+      className='section snap-y snap-mandatory overflow-y-scroll'
       >
-        <div className='section mx-auto px-8 lg:px-32 flex items-center justify-evenly'>
+        <div className='section snap-start mx-auto px-8 lg:px-32 flex items-center justify-evenly'>
           <div className='h-[60%] w-[30%] hidden lg:block'>
             <img src={project.image} alt={project.title}  className='object-cover opacity-90'/>
           </div>
-          <div
-            className=' w-full lg:w-[30%] flex flex-col gap-y-3 items-center lg:items-start'
-          >
-            <h1 className='font-primary text-[35px] capitalize'>{project.title}</h1>
+          <div className=' w-full lg:w-[30%] flex flex-col gap-y-3 items-center lg:items-start justify-between h-[300px]'>
+            <h1 className='font-primary text-[35px] capitalize'>
+              {project.title}
+            </h1>
             <p className='text-grey'>{project.description}</p>
             <div className="flex text-2xl items-end">
               <Link to={'/contact'}>
-                <button className='mt-3 btn px-5 py-2 font-light text-sm font-secondary w-fit mr-4'>Contact us</button>
+                <button className=' btn px-5 py-2 font-light text-sm font-secondary w-fit mr-4'>Contact us</button>
               </Link>
               {project.id > 1 && <Link to={`/projects/${prevProject}`} className="bg-light text-black bg-opacity-70  hover:bg-opacity-100 h-fit text-3xl rounded-full p-1 mr-2">
                 <MdKeyboardArrowLeft />
@@ -42,10 +42,7 @@ export default function ProjectDetails() {
               {project.id < 8 && <Link to={`/projects/${nextProject}`} className="bg-light text-black bg-opacity-70  hover:bg-opacity-100 h-fit text-3xl rounded-full p-1">
                 <MdKeyboardArrowRight />
               </Link>}
-            </div>
-           
-            
-            
+            </div>  
           </div>
         </div>
       </section>

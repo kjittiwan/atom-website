@@ -37,7 +37,7 @@ export default function ProjectsSection() {
             })}
           </motion.div>
         </motion.div>
-        <Link to={'/'} className='w-full flex justify-center'>
+        <Link to={'/projects'} className='w-full flex justify-center'>
           <button className='mt-3 btn px-5 py-2 font-light text-sm font-secondary w-fit'>View all works</button>
         </Link>
       </div>

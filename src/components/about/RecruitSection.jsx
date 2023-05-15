@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+import { Link } from "react-router-dom"
 
 export default function RecruitSection() {
   return (
@@ -9,7 +11,10 @@ export default function RecruitSection() {
         <div className='w-full h-[45%] bg-light rounded-md flex flex-col items-center justify-center gap-y-6'>
           <div className='text-[40px] font-primary'>Interested in joining our team?</div>
           <div className='text-xl text-center w-[45%] text-grey'>Curious about our story? Want to tell us more about yourself? We'd love to hear from you!</div>
-          <button className='btn px-4 py-2'>Contact us</button>
+          <Link to={'/contact'}>
+            <button className='btn px-4 py-2'>Contact us</button>
+          </Link>
+          
         </div>
     </section>
   )

@@ -1,21 +1,40 @@
 export const transition1 = {
-  duration: 1.4,
-  ease: [0.43, 0.13, 0.23, 0.96]
-};
-export const transition2 = {
-  duration: 1.4,
-  ease: [0.23, 0.13, 0.23, 0.96]
+  duration: .75,
+  ease: "easeOut"
 };
 
-export const transition3 = {
-  duration: 2.8,
-  ease: [0.23, 0.13, 0.23, 0.96]
-};
-export const transition4 = {
-  duration: 4.0,
-  ease: [0.26, 0.26, 0.23, 0.96]
-};
-export const transition5 = {
-  duration: 2.8,
-  ease: [0.60, 0.26, 0.23, 0.96]
-};
+export const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0.5,
+      staggerChildren: 0.2
+    }
+  }
+}
+export const container2 = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0.8,
+      staggerChildren: 0.2
+    }
+  }
+}
+
+export const item = {
+  hidden: { y: '-100%'},
+  show: {
+    y: '0%',
+    transition: { duration: 0.5 }
+  }
+}
+export const item2 = {
+  hidden: { x: '-100%'},
+  show: {
+    x: '0%',
+    transition: { duration: 0.5 }
+  }
+}

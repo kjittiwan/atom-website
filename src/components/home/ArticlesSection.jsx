@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom"
-import { useContext } from "react"
-import { ArticleContext } from "../../context/ArticleContext"
 import ArticleCard from "./ArticleCard"
 import Articles from "../../data/Articles"
 
-export default function () {
+export default function ArticlesSection() {
   return (
     <section className='section snap-start'>
       <div className='section flex flex-col items-center justify-center w-full h-full px-8 lg:px-32 pt-10'>
