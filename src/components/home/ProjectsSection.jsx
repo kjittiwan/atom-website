@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { useState, useEffect, useRef } from "react"
-import Projects from "../../data/Projects";
+import ProjectsData from "../../data/ProjectsData";
 import { Link } from "react-router-dom";
 export default function ProjectsSection() {
   const [width, setWidth] = useState(0)
@@ -25,7 +25,7 @@ export default function ProjectsSection() {
           drag="x"
           dragConstraints={{right:0, left:-width}}
           className=" flex">
-            {Projects.map((project) => {
+            {ProjectsData.map((project) => {
               return(
                 <motion.div key={project.title}  className=" min-w-[15rem] lg:min-w-[20rem] min-h-[250px] flex flex-col">
                   <img src={project.image} alt={project.title}

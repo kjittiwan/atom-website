@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Header() {
   const linkStyle = ' hover:text-black transition'
   return (
-    <header className='  drop-shadow-xl fixed w-full z-30 py-6 flex items-center px-8 lg:px-32 font-secondary'>
+    <header className='  drop-shadow-xl fixed w-full z-30 py-6 flex items-center px-8 lg:px-32 font-secondary hover:bg-white hover:bg-opacity-30 transition-all duration-300'>
       <div className='flex flex-col w-full lg:flex-row lg:items-center justify-between'>
         <Link to={'/'}>
           <img src={Logo} alt="logo" className='h-[40px] max-w-[150px]' />

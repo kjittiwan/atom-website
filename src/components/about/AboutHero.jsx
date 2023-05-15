@@ -1,5 +1,3 @@
-
-
 export default function AboutHero() {
   return (
     <section className='section snap-start flex flex-col justify-center  items-center px-32 pt-24 gap-y-14'>
