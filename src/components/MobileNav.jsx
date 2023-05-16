@@ -33,19 +33,16 @@ export default function MobileNav() {
           <BsArrowLeftShort />
         </div>
         <ul className='h-full flex flex-col justify-center items-center gap-y-8 font-semibold text-3xl'>
-          <li>
+          <li className='hover:underline hover:underline-offset-4 active:translate-y-1'>
             <Link to={'/'} onClick={toggleMenu} >Home</Link>
           </li>
-          <li>
+          <li className='hover:underline hover:underline-offset-4 active:translate-y-1'>
             <Link onClick={toggleMenu} to={'/about'} >About</Link>
           </li>
-          <li>
+          <li className='hover:underline hover:underline-offset-4 active:translate-y-1'>
             <Link onClick={toggleMenu} to={'/projects'} >Projects</Link>
           </li>
-          <li>
-            <Link onClick={toggleMenu} to={'/services'} >Services</Link>
-          </li>
-          <li>
+          <li className='hover:underline hover:underline-offset-4 active:translate-y-1'>
             <Link onClick={toggleMenu} to={'/contact'} >Contact</Link>
           </li>
          

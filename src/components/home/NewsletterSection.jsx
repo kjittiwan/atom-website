@@ -4,9 +4,9 @@ export default function NewsletterSection() {
     <section className="section snap-start">
      
       <div className="section mx-auto  flex items-center justify-between">
-        <div className="flex flex-col w-[40%] ml-32">
+        <div className="flex flex-col w-[60%] lg:w-[40%] px-8 lg:px-0 lg:ml-32">
           <p className='uppercase  text-sm text-grey'>offers & latest news</p>
-          <h1 className='font-primary text-[54px]'>Don't Miss Out!</h1> 
+          <h1 className='font-primary text-[54px]'>Don&apos;t Miss Out!</h1> 
           <p className="text-grey text-lg mt-2">Join our community of design enthusiasts. Subscribe to our newsletter for curated content, industry insights, and special promotions delivered straight to your inbox.</p>
           <form action="" className="flex w-[80%] mt-6">
             <input 

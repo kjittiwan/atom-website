@@ -3,7 +3,7 @@ import { useState } from "react"
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight} from 'react-icons/md'
 import { Link } from "react-router-dom"
 import { motion as m } from "framer-motion"
-import { transition1, item } from "../../transition"
+import { transition1 } from "../../transition"
 export default function Projects() {
   const firstSlide = ProjectsData.slice(0,4)
   const secondSlide = ProjectsData.slice(4)

@@ -14,7 +14,6 @@ export default function Header() {
           <Link to={'/'} className={`${linkStyle}`}>Home</Link>
           <Link to={'/about'} className={`${linkStyle}`}>About</Link>
           <Link to={'/projects'} className={`${linkStyle}`}>Projects</Link>
-          <Link to={'/blog'} className={`${linkStyle}`}>Blog</Link>
           <Link to={'/contact'} className={`${linkStyle}`}>Contact</Link>
         </nav>
       </div>

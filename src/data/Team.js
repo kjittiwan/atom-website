@@ -46,7 +46,7 @@ const Team = [
   },
   {
     name: 'Shavkat Rakhmonov',
-    position: 'Business Development Manager',
+    position: 'Development Manager',
     image: Member8
   }
 ]
