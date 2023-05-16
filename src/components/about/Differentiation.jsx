@@ -10,15 +10,15 @@ export default function Differentiation() {
         </div>
         <div className='flex flex-col lg:flex-row lg:justify-between gap-x-10 lg:text-2xl w-full gap-y-6'>
           <div className='lg:w-1/3'>
-            <h3 className="font-bold mb-2 text-lg">Adept.</h3>
+            <h3 className="font-semibold mb-2 lg:mb-4 text-lg lg:text-3xl font-primary">Adept.</h3>
             Our holistic approach combines <span className="font-bold">innovative</span> design concepts with <span className="font-bold">expert</span> construction techniques, resulting in the perfect space.
           </div>
           <div className='lg:w-1/3'>
-            <h3 className="font-bold mb-2 text-lg">Insightful.</h3>
+            <h3 className="font-semibold mb-2 lg:mb-4 text-lg lg:text-3xl font-primary">Insightful.</h3>
             We understand that your space is a reflection of your <span className="font-bold">personality</span> and <span className="font-bold">aspirations</span>, and we take pride in bringing your dreams to reality.
           </div>
           <div className='lg:w-1/3'>
-            <h3 className="font-bold mb-2 text-lg">Dependable.</h3>
+            <h3 className="font-semibold mb-2 lg:mb-4 text-lg lg:text-3xl font-primary">Dependable.</h3>
             Whether you&apos;re looking to build a custom home, renovate a commercial space, or embark on a large-scale project, <span className="font-bold">Atom is your trusted partner</span>.
           </div>
         </div>

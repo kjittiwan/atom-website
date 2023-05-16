@@ -28,16 +28,16 @@ export default function ProjectDetails() {
       transition={transition2}
       className='section snap-y snap-mandatory overflow-y-scroll'
       >
-        <div className='section snap-start mx-auto px-8 lg:px-32 flex items-center justify-evenly'>
-          <div className='h-[60%] w-[30%] hidden lg:block'>
-            <img src={project.image} alt={project.title}  className='object-cover opacity-90'/>
+        <div className='section snap-start mx-auto px-8 lg:px-32 flex flex-col lg:flex-row items-center justify-center lg:justify-evenly gap-y-6 pt-14 lg:pt-0'>
+          <div className='lg:h-[65%] lg:w-[35%] w-[80%] h-[50%]'>
+            <img src={project.image} alt={project.title}  className='object-cover opacity-90 w-full h-full'/>
           </div>
-          <div className=' w-full lg:w-[30%] flex flex-col gap-y-3 items-center lg:items-start justify-between h-[300px]'>
+          <div className=' w-full lg:w-[30%] flex flex-col gap-y-3 items-center lg:items-start justify-between lg:h-[250px]'>
             <h1 className='font-primary text-[35px] capitalize'>
               {project.title}
             </h1>
-            <p className='text-grey'>{project.description}</p>
-            <div className="flex text-2xl items-end">
+            <p className='text-grey text-center lg:text-left'>{project.description}</p>
+            <div className="flex text-2xl items-end mt-4 lg:mt-0">
               <Link to={'/contact'}>
                 <button className=' btn px-5 py-2 font-light text-sm font-secondary w-fit mr-4'>Contact us</button>
               </Link>

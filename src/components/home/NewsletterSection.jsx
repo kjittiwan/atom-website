@@ -1,7 +1,8 @@
 import Sketch from '../../images/home/sketch.png'
+import Footer from '../Footer'
 export default function NewsletterSection() {
   return (
-    <section className="section snap-start">
+    <section className="section snap-start relative">
      
       <div className="section mx-auto  flex items-center justify-between">
         <div className="flex flex-col w-[60%] lg:w-[40%] px-8 lg:px-0 lg:ml-32">
@@ -22,10 +23,9 @@ export default function NewsletterSection() {
         </div>
         <div className='w-[42%] h-[45%]'>
           <img src={Sketch} alt="" className='object-cover h-full opacity-80'/>
-        </div>
-       
-        
+        </div> 
       </div>
+      <Footer />
     </section>
   )
 }

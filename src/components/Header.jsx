@@ -3,11 +3,11 @@ import Logo from '../images/header/logo.png'
 import { Link } from 'react-router-dom'
 
 export default function Header() {
-  const linkStyle = ' hover:text-black transition'
+  const linkStyle = ' hover:underline hover:underline-offset-4 active:translate-y-1 hover:scale-105'
   return (
     <header className='  drop-shadow-xl fixed w-full z-30 py-6 flex items-center px-8 lg:px-32 font-secondary'>
       <div className='flex flex-col w-full lg:flex-row lg:items-center justify-between'>
-        <Link to={'/'}>
+        <Link to={'/'} className={`${linkStyle}`}>
           <img src={Logo} alt="logo" className='h-[40px] max-w-[150px]' />
         </Link>
         <nav className='hidden xl:flex gap-x-8 font-semibold'>

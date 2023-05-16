@@ -7,7 +7,7 @@ export default function ServiceSection() {
     className='section snap-start'
     
     >
-      <div className='section mx-auto px-8 lg:px-32 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-y-2 lg:gap-y-4'>
+      <div className='section mx-auto px-8 lg:px-32 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-y-2 lg:gap-y-4 pt-10 lg:pt-0'>
         
         <div
           className='font-primary w-[400px] flex flex-col gap-y-3'
