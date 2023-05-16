@@ -3,7 +3,8 @@ import ProjectsData from "../data/ProjectsData"
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight} from 'react-icons/md'
-
+import { motion as m } from "framer-motion"
+import { transition2 } from "../../transition"
 export default function ProjectDetails() {
   const { id } = useParams()
   const [nextProject, setNextProject] = useState(0)
@@ -20,7 +21,11 @@ export default function ProjectDetails() {
   }
   const project = [...ProjectsData].find((item) => item.id === parseInt(id))
   return (
-    <section
+    <m.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={transition2}
       className='section snap-y snap-mandatory overflow-y-scroll'
       >
         <div className='section snap-start mx-auto px-8 lg:px-32 flex items-center justify-evenly'>
@@ -45,6 +50,6 @@ export default function ProjectDetails() {
             </div>  
           </div>
         </div>
-      </section>
+      </m.section>
   )
 }

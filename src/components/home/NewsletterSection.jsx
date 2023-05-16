@@ -14,6 +14,7 @@ export default function NewsletterSection() {
             name="email"
             id="email"
             placeholder="Enter your e-mail adress here"
+            required
             className="flex-1 border-2 border-r-0 px-4 py-2 placeholder:text-grey"
             />
             <button className="btn text-sm px-4">submit</button>

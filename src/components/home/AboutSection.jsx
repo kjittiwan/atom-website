@@ -1,6 +1,4 @@
 import Building from '../../images/about/building.jpg'
-import { motion } from 'framer-motion'
-import { transition1 } from '../../../transition'
 import { Link } from 'react-router-dom'
   
 export default function AboutSection() {

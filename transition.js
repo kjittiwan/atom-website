@@ -3,6 +3,11 @@ export const transition1 = {
   ease: "easeOut"
 };
 
+export const transition2 = {
+  duration: .10,
+  ease: "easeOut"
+};
+
 export const container = {
   hidden: { opacity: 0 },
   show: {

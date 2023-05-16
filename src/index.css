@@ -13,6 +13,6 @@
     @apply text-[54px] lg:text-[108px] font-bold font-primary capitalize leading-[120%] tracking-[-0.05em] mb-2;
   }
   .btn {
-    @apply  flex items-center justify-center uppercase bg-black  text-white;
+    @apply  flex items-center justify-center uppercase bg-black  text-white active:translate-y-1;
   }
 }

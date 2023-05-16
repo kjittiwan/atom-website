@@ -1,9 +1,16 @@
 import { BsInstagram, BsLine, BsFacebook } from 'react-icons/bs'
 import { FiPhoneCall } from 'react-icons/fi'
+import { motion as m } from "framer-motion"
+import { transition1 } from "../../transition"
 
 function Contact() {
   return (
-    <section className='section'>
+    <m.section
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={transition1}
+    className='section'>
       <div className=" section flex flex-col items-center justify-center gap-y-10">
         <div className='flex flex-col items-center gap-y-4 pt-10'>
           <div className="uppercase text-2xl md:text-[30px] font-primary">Get in touch with us</div>
@@ -69,7 +76,7 @@ function Contact() {
           <button className='btn self-center border w-[60%] py-3'>SUBMIT</button>
         </form>
       </div>
-    </section>
+    </m.section>
   );
 }
 
