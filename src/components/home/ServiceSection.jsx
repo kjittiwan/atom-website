@@ -5,15 +5,12 @@ export default function ServiceSection() {
   return (
     <section
     className='section snap-start'
-    
     >
-      <div className='section mx-auto px-8 lg:px-32 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-y-2 lg:gap-y-4 pt-10 lg:pt-0'>
+      <div className='section mx-auto px-8 lg:px-32 flex flex-col lg:flex-row items-start lg:items-center justify-center lg:justify-between gap-y-2 lg:gap-y-4 pt-10 lg:pt-0'>
         
-        <div
-          className='font-primary w-[400px] flex flex-col gap-y-3'
-        >
+        <div className='font-primary lg:w-[400px] flex flex-col gap-y-3'>
           <p className='uppercase font-secondary text-sm text-grey'>Our services</p>
-          <h1 className=' text-[54px]'>What We Offer</h1>
+          <h1 className=' text-[40px] lg:text-[54px]'>What We Offer</h1>
           <div className='flex flex-col text-grey'>
             <List order='01' title='residential design' />
             <List order='02' title='public & institutional design' />

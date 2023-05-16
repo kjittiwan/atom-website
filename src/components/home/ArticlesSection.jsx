@@ -7,9 +7,9 @@ export default function ArticlesSection() {
     <section className='section snap-start'>
       <div className='section flex flex-col items-center justify-center w-full h-full px-8 lg:px-32 pt-10'>
         <p className='uppercase  text-sm text-grey'>Articles</p>
-        <h1 className='font-primary text-[35px] lg:text-[54px] mb-4 lg:mb-10'>Latest Blogs</h1>
+        <h1 className='font-primary text-[30px] lg:text-[54px] mb-4 lg:mb-10'>Latest Blogs</h1>
         <div className="mb-2 w-full">
-          <div className="grid lg:grid-cols-4 grid-rows-1 gap-4 lg:gap-[40px] max-w-none mx-auto">
+          <div className="flex flex-col lg:flex-row w-full gap-4 lg:gap-[40px] max-w-none mx-auto">
             {Articles.map((article) => {
               return <ArticleCard key={article.id} article={article} />
             })}    

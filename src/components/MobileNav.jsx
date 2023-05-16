@@ -21,7 +21,7 @@ export default function MobileNav() {
   }
   return (
     <nav className='xl:hidden'>
-      <div onClick={toggleMenu} className='text-3xl cursor-pointer'>
+      <div onClick={toggleMenu} className='text-2xl cursor-pointer'>
         <CgMenuRight />
       </div>
       <motion.div 

@@ -3,7 +3,7 @@
 export default function ArticleCard({article}) {
   const {id, title, date, image} = article
   return (
-    <div className=" flex flex-col h-[110px] lg:h-[400px] relative group">
+    <div className=" flex flex-col h-[100px] lg:h-[400px] relative group w-full">
       <div className=" h-full lg:h-[75%] mb-4">
         <img src={image} alt="" className='h-full w-full object-cover' />
       </div>
