@@ -1,9 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom"
+import Footer from '../Footer'
 
 export default function RecruitSection() {
   return (
-    <section className='section snap-start flex flex-col justify-center items-center px-8 lg:px-52 gap-y-14 pt-14'>
+    <section className='section snap-start flex flex-col justify-center items-center px-8 lg:px-52 gap-y-14 relative pb-4'>
         <div className='flex justify-between w-full items-center'>
           <div className='w-[45%] lg:w-[40%] text-xl lg:text-3xl font-semibold'>We work hard, but we also play hard together, like our virtual happy hours, game nights, and costume parties.</div>
           <div className='w-[50%] lg:w-[40%] lg:text-xl text-grey'>And although we're always learning from industry experts, we don't take ourselves too seriously. You'll find a great, supportive team here at Atom, where you can grow your career and find opportunities to shine.</div>
@@ -14,8 +15,8 @@ export default function RecruitSection() {
           <Link to={'/contact'}>
             <button className='btn px-4 py-2'>Contact us</button>
           </Link>
-          
         </div>
+        <Footer />
     </section>
   )
 }
