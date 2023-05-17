@@ -14,15 +14,15 @@ function Contact() {
       <div className=" section flex flex-col items-center justify-center gap-y-6 lg:gap-y-10 px-8">
         <div className='flex flex-col items-center gap-y-2 lg:gap-y-4 pt-16'>
           <div className="uppercase text-2xl lg:text-[30px] font-primary">Get in touch with us</div>
-          <div className="text-center lg:text-base font-light text-gray-500">We&apos;re here to help! Contact us by clicking these links or filling out the form below</div>
-          <div className='flex gap-x-8 text-2xl text-black pt-3'>
+          <div className="text-center text-sm lg:text-base font-light text-gray-500">We&apos;re here to help! Contact us by clicking these links or filling out the form below</div>
+          <div className='flex gap-x-8 text-xl lg:text-2xl text-black pt-3'>
             <div className='cursor-pointer hover:scale-105 active:translate-y-1'> <FiPhoneCall /> </div>
             <div className='cursor-pointer hover:scale-105 active:translate-y-1'> <BsFacebook /> </div>
             <div className='cursor-pointer hover:scale-105 active:translate-y-1'> <BsInstagram/> </div>
             <div className='cursor-pointer hover:scale-105 active:translate-y-1'> <BsLine /> </div>
           </div>
         </div>
-        <form action="" className='flex flex-col  w-full md:w-[40%] gap-y-6 border p-4 border-zinc-500 text-slate-700'>
+        <form action="" className='flex flex-col  w-full md:w-[40%] gap-y-4 lg:gap-y-6 border p-4 border-zinc-500 text-slate-700'>
           <label className='block'>
             <span className={`after:content-['*'] after:ml-0.5 `}>First name</span>
           <input 

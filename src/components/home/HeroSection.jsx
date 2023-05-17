@@ -9,7 +9,7 @@ export default function HeroSection() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={transition1} 
-        className='section snap-start flex flex-col items-center  lg:items-start justify-center lg:pl-48 bg-building bg-cover'
+        className='section snap-start flex flex-col items-center  md:items-start justify-center md:pl-48 bg-building bg-cover'
         >
           <m.div
           variants={container}
@@ -51,7 +51,7 @@ export default function HeroSection() {
                 animate={{x:'0%'}}
                 initial={{x:'-100%'}}
                 transition={transition1}
-                className='font-light font-secondary italic text-[16px] lg:text-[28px]'>Your space, our expertise</m.p>
+                className='font-light font-secondary italic text-[16px] md:text-[28px]'>Your space, our expertise</m.p>
               </div>
               <Link to={'/projects'}>
                 <div className='overflow-hidden'>
@@ -60,7 +60,7 @@ export default function HeroSection() {
                   initial={{x:'-100%'}}
                   transition={transition1} 
                   variants={item2}
-                  className='mt-3 btn px-4 py-2 font-light text-[14px] lg:text-[24px]'>Our projects</m.button>
+                  className='mt-3 btn px-4 py-2 font-light text-[14px] md:text-[24px]'>Our projects</m.button>
                 </div>
                 
               </Link>

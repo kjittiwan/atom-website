@@ -15,8 +15,8 @@ export default function Projects() {
     exit={{ opacity: 0 }}
     transition={transition1}
     className='section snap-y snap-mandatory overflow-y-scroll'>
-      <div className="section snap-start flex justify-center items-center px-8 lg:px-32 flex-col gap-y-4 pt-14 lg:pt-0">
-          <div className="font-primary text-[35px] lg:text-[54px]">Our Projects</div>
+      <div className="section snap-start flex justify-center items-center px-8 lg:px-32 flex-col gap-y-4 lg:pt-0">
+          <div className="font-primary text-[35px] md:text-[54px] lg:text-[54px]">Our Projects</div>
           <div className="text-grey mb-4 lg:mb-16 text-center text-sm lg:text-base w-[90%] lg:w-full">Discover our showcase of extraordinary projects, where creativity and <br/> precision converge to redefine the art of architectural design.</div>
           <div className="lg:flex lg:justify-center lg:items-center lg:h-[40%]  w-full gap-x-2 gap-y-8 lg:gap-6 grid grid-rows-2 grid-cols-4">
             <button onClick={() => setCurrentSlide(firstSlide)} className={`${currentSlide === firstSlide ? 'bg-grey text-gray-500' : 'bg-light text-black'} bg-opacity-70  hover:bg-opacity-100 h-fit text-xl lg:text-3xl rounded-full p-2 active:translate-y-1 lg:block hidden`}><MdKeyboardArrowLeft /></button>
